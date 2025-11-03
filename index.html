@@ -7,15 +7,14 @@
   body { margin:0; background: #5e5109a6; }
   /* Imagen fija en la esquina superior derecha */
   .esquina {
-    position: fixed;   /* Se mantiene aunque hagas scroll */
-    top: 5px;         /* Distancia desde arriba */
-    right: 5px;       /* Distancia desde la derecha */
-    width: 120px;      /* Ajusta tamaño */
-    z-index: 1500;     /* Para que quede encima del contenido */
+    position: absolute;   
+    top: 5px;         
+    right: 5px;       
+    width: 120px;      
+    z-index: 1500;     
   }
 
-</style>
-</head>
+</style> 
 <body>
 
 <!-- Imagen -->
@@ -33,10 +32,13 @@
     background: #ffffff;
     border-bottom: 1px solid #b6880ad7;
     padding: 20px 0;
-    text-align: center;
+    text-align: justify;
   }
   header h1 { margin: 0; }
-  }
+  p {
+      text-align: justify;
+      margin-bottom: 15px;
+    }
   /* --- Menú principal --- */
   nav ul {
     list-style: none;
@@ -87,9 +89,16 @@
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
+  footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: #aaa;
+      margin-top: 40px;
+    }
 </style>
 </head>
-<body>
+</body>
 
 <header>
   <h1>LA REINA</h1>

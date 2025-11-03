@@ -18,7 +18,7 @@
     header {
       background: #222;
       color: white;
-      text-align: center;
+      text-align: justify;
       padding: 40px 20px;
     }
 
@@ -93,10 +93,9 @@ Actualmente cuenta con 5 empleados, divididos entre producción, ventas y admini
   <footer>
     © <span id="year"></span> La Reina — Todos los derechos reservados.
   </footer>
-
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // Actualiza el año en el pie de página
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
