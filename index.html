@@ -2,119 +2,133 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>LA REINA</title>
-<style>
-  body { margin:0; background: #5e5109a6; }
-  /* Imagen fija en la esquina superior derecha */
-  .esquina {
-    position: absolute;   
-    top: 5px;         
-    right: 5px;       
-    width: 120px;      
-    z-index: 1500;     
-  }
-
-</style> 
-<body>
-
-<!-- Imagen -->
-<img src="logolareina.jpg" alt="Mi logo" class="esquina">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LA REINA</title>
-<style>
-  /* --- Estilos generales --- */
-  body {
-    margin: 0;
-    font-family: Georgia, serif;
-    background: #726b059a;
-  }
-  header {
-    background: #ffffff;
-    border-bottom: 1px solid #b6880ad7;
-    padding: 20px 0;
-    text-align: justify;
-  }
-  header h1 { margin: 0; }
-  p {
+  <title>LA REINA</title> 
+
+  <style>
+    /* --- Estilos generales --- */
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #5f5906ce;
+    }
+
+    /* --- Logo en esquina --- */
+    .esquina {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 120px;
+      z-index: 1500;
+    }
+
+    /* --- Encabezado --- */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #725a19d7;
+      padding: 20px 0;
+      text-align: center; /* Centramos el contenido del header */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #333;
+      letter-spacing: 2px;
+    }
+
+    /* --- Menú --- */
+    nav ul {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 10px;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    nav ul li a:hover {
+      background: #eee;
+      color: #000;
+    }
+
+    /* --- Contenido --- */
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .content h1, .content h2, .content h3, .content h4, .content h5 {
+      text-align: justify;
+    }
+
+    .content p {
       text-align: justify;
       margin-bottom: 15px;
     }
-  /* --- Menú principal --- */
-  nav ul {
-    list-style: none;
-    margin: 10px 0 0;
-    padding: 0;
-    display: inline-flex;
-  }
-  nav ul li {
-    position: relative; /* Necesario para el submenú */
-  }
-  nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #555;
-  }
-  nav ul li a:hover {
-    background: #eee;
-    color: #000;
-  }
 
-  /* --- Submenú --- */
-  nav ul li ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff;
-    padding: 0;
-    list-style: none;
-    border: 1px solid #ddd;
-    display: none; /* Oculto por defecto */
-    min-width: 180px;
-  }
-  nav ul li ul li a {
-    padding: 10px;
-    white-space: nowrap;
-  }
-  nav ul li:hover ul {
-    display: block; /* Se muestra al pasar el mouse */
-  }
+    /* --- Imagen adicional --- */
+    .imagen-extra {
+      display: block;
+      margin: 30px auto;
+      width: 40%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
 
-  /* --- Contenido --- */
-  .content {
-    max-width: 800px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  footer {
+    /* --- Footer --- */
+    footer {
       text-align: center;
       padding: 15px;
       background: #111;
       color: #aaa;
       margin-top: 40px;
+      font-size: 0.9em;
     }
-</style>
+
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-</body>
+<body>
 
-<header>
-  <h1>LA REINA</h1>
-  <nav>
-      <li>
-        <ul> <!-- Submenú -->
-          <li><a href="mas-informacion.html">Hacerca de la Empreza</a></li>
-        </ul>
-      </li>
-  </nav>
-</header>
+  <!-- Logo -->
+  <img src="logolareina.jpg" alt="Logo La Reina" class="esquina">
 
-<section class="content">
+  <!-- Encabezado -->
+  <header>
+    <h1>LA REINA</h1>
+    <nav>
+      <ul>
+        <li><a href="mas-informacion.html">Hacerca de la Empresa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <section class="content">
     <h1>DESCRIPCION</h1>
     <p>El mezcal artesanal que por nombre lleva "La Reina"es una de tantas bebidas espirituosas, es un mezcal 100% artesanal elaborado con maguey previamente seleccionado con la mejor calidad y siguiendo pasos tradicionales que conservan la esencia, pureza de un mezcal. Su nombre refleja la elegancia, la fuerza y distinción de un producto que honra la herencia cultural de México. Cada botella de La Reina encierra un proceso artesanal único ; desde la cosecha manual del agave maduro, su cocción en hornos de piedra, la molienda con tahona y la fermentación natural en tinas de madera, hasta su destilación en alambiquede cobre. El resultado es un mezcal de aroma intenso, sabor ahumado y notas suaves que conquistan el paladar.</p>
     <P>“La Reina” busca posicionarse como un símbolo de calidad, tradición y orgullo mexicano, ideal para quienes disfrutan de experiencias auténticas y desean compartir y disfrutar un increíble pedazo de nuestra cultura en cada sorbo.</P>
+
+    <img src="lareina-fondo.jpg" alt="Botella de mezcal La Reina" class="imagen-extra"
+
     <h2>DECALOGO DE VALORES DEL NEGOCIO:</h2>
     <P>● Autenticidad:
 Honramos la esencia del mezcal artesanal, manteniendo procesos tradicionales que reflejan el verdadero espíritu de México.</P>
@@ -151,24 +165,24 @@ En el ámbito internacional, el mezcal artesanal compite con destilados como el 
     <p>● Una fuente señala que en 2023 unas 7.8 millones de litros de mezcal fueron exportados a 86 países. ￼</p>
   </section>
 
-<footer>
-    <div class="muted">© <span id="year"></span> LA REINA — Todos los derechos reservados.</div>
-    <div class="contacto">
-        Política de privacidad · Términos · reservados
-        <!-- Menú principal -->
-<ul> <!-- Submenú -->        
-<span>Ubicación: 
-Calle: Juarez norte s/n
-Colonia: Centro
-CP:40850
-Petatlán, Guerrero</span>
-<a href="tel:7581075554">Teléfono: 7581075554</a>
-<a href="mailto:mezcalartesanallareina@gmail.com">Correo electrónico: mezcalartesanallareina@gmail.com</a>
-<a href="Ubicacion en google maps: https://maps.app.goo.gl/tATQXcajPfgtWiL4A?g_st=awd">Ubicación en google maps</a>
-</ul>
+  <!-- Footer -->
+  <footer>
+    <div>© <span id="year"></span> LA REINA — Todos los derechos reservados.</div>
+    <div>
+      <p>Política de privacidad · Términos · Reservados</p>
+      <p>Ubicación: Calle Juárez Norte s/n, Colonia Centro, CP 40850, Petatlán, Guerrero</p>
+      <p>
+        <a href="tel:7581075554">Teléfono: 7581075554</a> |
+        <a href="mailto:mezcalartesanallareina@gmail.com">mezcalartesanallareina@gmail.com</a> |
+        <a href="https://maps.app.goo.gl/tATQXcajPfgtWiL4A?g_st=awd" target="_blank">Ver en Google Maps</a>
+      </p>
     </div>
   </footer>
 
-  
+  <script>
+    // Año automático
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
